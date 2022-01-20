@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menyu</title>
+</head>
+<body>
+<header>
+
+    <a href="{%url 'ka' %}"> <br>Kavsar surasi</br></a>
+    <a href="{% url 'du'%}">  <br> Duo</br></a>
+    <a href="{% url 'sa' %}"><br>Salovat</br></a>
+    <a href="{% url 'mu' %}"> <br>Mulk surasi</br>  </a>
+    <a href="{% url 'ro' %}"> <br>Rohman surasi </br></a>
+     <a href="{% url 'b' %}"> <br>Bosh sahifa</br></a>
+      <a href="{% url 'n' %}"> <br>Yangiliklar</br></a>
+     <a href="{% url 'ad' %}"> <br>Admin panel</br></a>
+
+
+</header>
+
+{% block content  %}
+
+{% endblock content %}
+
+</body>
+</html>

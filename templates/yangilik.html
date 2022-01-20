@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yangilik</title>
+</head>
+<body>
+{% extends 'ustun.html' %}
+{%block content%}
+<h1>Kun yangliklari</h1>
+<p>Agar siz parol bilan username ni bilsanngiz "Admin panelga" o'tib malumotlar va yangililar qo'shing</p>
+<ul>
+    {% for post in object_list %}
+    <l>{{ post.title }}<br><b>{{post.text}}</b></b></l></br>
+    {%endfor%}
+
+</ul>
+{% endblock content %}
+</body>
+</html>
